@@ -1,0 +1,176 @@
+/* =========================================================
+   Contacto + footer
+   ========================================================= */
+
+.contact {
+  padding: 0 10px 10px;
+}
+
+.contact__box {
+  position: relative;
+  overflow: clip;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #0c2526 0%, #134a49 45%, #1d6e67 100%);
+  padding: 80px 20px 28px;
+  text-align: center;
+  color: #fff;
+}
+
+/* aurora que "respira" */
+.aurora {
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse 50% 50% at 50% 55%, rgba(170, 245, 200, 0.95) 0%, rgba(95, 215, 160, 0.78) 34%, rgba(40, 150, 120, 0) 70%);
+  filter: blur(34px);
+  transform: translateX(-50%);
+  animation: breathe 7s ease-in-out infinite alternate;
+}
+
+.contact__aurora {
+  top: 240px;
+  width: 640px;
+  height: 480px;
+  opacity: 0.9;
+}
+
+.contact__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__eyebrow {
+  margin: 0 0 14px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.contact__title {
+  margin: 0;
+  font-size: 46px;
+  line-height: 1.04;
+}
+
+.contact__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.contact__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 72px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.contact__socials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  order: 1;
+}
+
+.contact__copy {
+  order: 2;
+  margin-top: 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.soc {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px 0;
+  transition: color 0.3s;
+}
+
+.soc:hover {
+  color: #fff;
+}
+
+/* ---------- tablet ---------- */
+@media (min-width: 768px) {
+  .contact {
+    padding: 0 16px 16px;
+  }
+  .contact__box {
+    border-radius: 28px;
+    padding: 100px 40px 40px;
+  }
+  .aurora {
+    filter: blur(46px);
+  }
+  .contact__aurora {
+    top: 250px;
+    width: 1000px;
+    height: 600px;
+  }
+  .contact__eyebrow {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .contact__title {
+    font-size: 64px;
+    line-height: 1.02;
+  }
+  .contact__actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+    margin-top: 40px;
+  }
+  .contact__footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding-top: 28px;
+  }
+  .contact__copy {
+    order: 0;
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .contact__socials {
+    display: flex;
+    gap: 32px;
+    width: auto;
+  }
+  .soc {
+    padding: 0;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
+
+/* ---------- desktop ---------- */
+@media (min-width: 1100px) {
+  .contact {
+    padding: 0 24px 24px;
+  }
+  .contact__box {
+    padding: 120px 72px 48px;
+  }
+  .contact__aurora {
+    top: 260px;
+    width: 1300px;
+    height: 700px;
+  }
+  .contact__title {
+    font-size: 80px;
+  }
+  .contact__footer {
+    margin-top: 150px;
+  }
+}

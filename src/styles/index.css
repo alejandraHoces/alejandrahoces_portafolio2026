@@ -1,0 +1,6 @@
+/* animations va primero: las clases de layout (.btn, .nav__brand…) deben poder sobrescribir el display de .w/.ws */
+@import './animations.css';
+@import './base.css';
+@import './hero.css';
+@import './sections.css';
+@import './contact.css';

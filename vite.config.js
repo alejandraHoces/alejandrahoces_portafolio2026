@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/alejandrahoces_portafolio2026/',
   build: {
     // Vite 8 usa Rolldown: `rolldownOptions` + `codeSplitting` reemplazan a `rollupOptions` + `manualChunks`
     rolldownOptions: {

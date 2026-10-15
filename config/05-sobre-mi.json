@@ -1,0 +1,13 @@
+{
+  "_ayuda": "Sección \"Sobre mí\". Los textos en [\"línea 1\", \"línea 2\"] se muestran en dos renglones. En las cifras, \"value\" es el número que se anima y \"prefix\" lo que va delante (opcional).",
+
+  "title": ["Diseño con propósito.", "Enfocada en las personas."],
+
+  "stats": [
+    { "prefix": "+", "value": 8, "label": ["Años en tecnología", "y diseño digital"] },
+    { "value": 3, "label": ["Marcas diseñadas en", "Wunderman Thompson"] },
+    { "value": 4, "label": ["Casos de estudio", "publicados"] }
+  ],
+
+  "text": "Hola, soy Alejandra Hoces. Tengo formación técnica en Computación e Informática y soy egresada de Laboratoria en UX Design y desarrollo web. Durante un año en Wunderman Thompson diseñé experiencias digitales para marcas como Movistar, Izi Pay y AlDía. Me encanta viajar, aprender constantemente y participar en voluntariados deportivos y ambientales."
+}

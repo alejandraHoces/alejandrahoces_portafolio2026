@@ -1,0 +1,16 @@
+{
+  "_ayuda": "Portada (primera pantalla). El titular va palabra por palabra: \"breakAfter\": \"always\" salta de línea después de esa palabra; \"mobile\" solo salta en celular. El botón \"Descargar CV\" sale de 02-menu-logo-y-cv.json.",
+
+  "eyebrow": "UX Designer · Lima, Perú",
+
+  "title": [
+    { "text": "Diseño" },
+    { "text": "experiencias", "breakAfter": "always" },
+    { "text": "centradas" },
+    { "text": "en", "breakAfter": "mobile" },
+    { "text": "las" },
+    { "text": "personas" }
+  ],
+
+  "primaryButton": { "label": "Ver proyectos", "href": "#proyectos" }
+}

@@ -1,0 +1,21 @@
+{
+  "_ayuda": "Barra superior: logo, enlaces del menú y el CV. El link del CV se usa en el menú, en la portada y en el footer. \"url\" puede ser el nombre de un archivo dentro de la carpeta public/ (p. ej. cv_alejandra_hoces_2026.pdf) o un link https.",
+
+  "logo": {
+    "name": "Alejandra Hoces",
+    "initials": "ah"
+  },
+
+  "links": [
+    { "label": "Sobre mí", "href": "#sobre-mi" },
+    { "label": "Lo que hago", "href": "#servicios" },
+    { "label": "Proyectos", "href": "#proyectos" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+
+  "cv": {
+    "url": "cv_alejandra_hoces_2026.pdf",
+    "buttonLabel": "Descargar CV",
+    "footerLabel": "CV"
+  }
+}

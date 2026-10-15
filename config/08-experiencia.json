@@ -1,0 +1,25 @@
+{
+  "_ayuda": "Sección \"Experiencia\" y la lista de herramientas. Una herramienta con \"desktopOnly\": true no aparece en celular.",
+
+  "title": "Experiencia",
+  "lead": "De la técnica al diseño: una mirada que une a las personas con la tecnología.",
+
+  "items": [
+    { "period": "2020 — Hoy", "role": "Técnico en digitalización", "org": "Computación e Informática" },
+    { "period": "2018 — 2019", "role": "UX Designer Jr.", "org": "Wunderman Thompson" },
+    { "period": "2018 — 2019", "role": "UX Designer & Web Development", "org": "Laboratoria" }
+  ],
+
+  "toolsTitle": "HERRAMIENTAS",
+  "tools": [
+    { "name": "Figma" },
+    { "name": "Marvel App" },
+    { "name": "Photoshop" },
+    { "name": "HTML" },
+    { "name": "CSS" },
+    { "name": "JavaScript" },
+    { "name": "GitHub" },
+    { "name": "Research & Synthesis" },
+    { "name": "Information Architecture", "desktopOnly": true }
+  ]
+}

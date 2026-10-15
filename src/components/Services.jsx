@@ -3,6 +3,7 @@ import { services } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
 import Eyebrow from './Eyebrow'
 import { ArrowUpRight, ServiceIcon } from './Icons'
+import Lines from './Lines'
 
 /**
  * En pantallas táctiles no hay hover: el diseño mobile muestra una card "encendida".
@@ -41,24 +42,22 @@ function useTouchActiveCard(count, initial = 2) {
 }
 
 export default function Services() {
-  const { refs, active } = useTouchActiveCard(services.length)
+  const { refs, active } = useTouchActiveCard(services.items.length)
 
   return (
     <section id="servicios" className="services wrap">
-      <Eyebrow>LO QUE HAGO</Eyebrow>
+      <Eyebrow>{services.eyebrow}</Eyebrow>
       <div className="section-head">
         <h2 className="section-title serif rv">
-          Diseño UX<br className="br-desktop" /> de principio a fin
+          <Lines lines={services.title} />
         </h2>
-        <p className="section-lead fu">
-          Investigo, ordeno y prototipo para que cada producto sea fácil de usar y tenga sentido para quien lo usa.
-        </p>
+        <p className="section-lead fu">{services.lead}</p>
       </div>
 
       <div className="cards">
-        {services.map((s, i) => (
+        {services.items.map((s, i) => (
           <a
-            key={s.icon}
+            key={i}
             ref={(el) => (refs.current[i] = el)}
             data-index={i}
             className={cx('card fu', stagger(1, i + 1), active === i && 'is-on')}
@@ -70,8 +69,7 @@ export default function Services() {
             <div className="card__ct">
               <ServiceIcon name={s.icon} />
               <h3 className="card__title serif">
-                {s.title[0]}
-                <br className="br-desktop" /> {s.title[1]}
+                <Lines lines={s.title} />
               </h3>
             </div>
             <p className="card__desc card__ct">{s.desc}</p>

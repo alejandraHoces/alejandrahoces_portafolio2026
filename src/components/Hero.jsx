@@ -1,19 +1,13 @@
 import { useCallback, useEffect, useState } from 'react'
-import { CV_URL, navLinks } from '../data/content'
+import { cv, hero, navLinks, site } from '../data/content'
 import { CloseIcon, MenuIcon } from './Icons'
 
-/* Retrasos (s) del reveal "smear" palabra por palabra, igual que en el diseño */
-const headline = [
-  { text: 'Diseño', delay: 0.35 },
-  { text: 'experiencias', delay: 0.5, breakAfter: 'always' },
-  { text: 'centradas', delay: 0.65 },
-  { text: 'en', delay: 0.78, breakAfter: 'mobile' },
-  { text: 'las', delay: 0.9 },
-  { text: 'personas', delay: 1.02 },
-]
+/* Retrasos (s) del reveal "smear" palabra por palabra, igual que en el diseño; si hay más palabras se sigue sumando 0.12s */
+const WORD_DELAYS = [0.35, 0.5, 0.65, 0.78, 0.9, 1.02]
+const wordDelay = (i) => WORD_DELAYS[i] ?? WORD_DELAYS.at(-1) + (i - WORD_DELAYS.length + 1) * 0.12
 
 function Logo() {
-  return <span className="logo-mark serif">ah</span>
+  return <span className="logo-mark serif">{site.initials}</span>
 }
 
 function HeroBackground() {
@@ -68,7 +62,7 @@ function MobileMenu({ open, onClose }) {
       <div className="mmenu__top px">
         <span className="nav__brand">
           <Logo />
-          Alejandra Hoces
+          {site.name}
         </span>
         <button className="menu-btn" type="button" aria-label="Cerrar menú" onClick={onClose}>
           <CloseIcon />
@@ -76,14 +70,14 @@ function MobileMenu({ open, onClose }) {
       </div>
       <nav className="mmenu__links px" aria-label="Principal">
         {navLinks.map((l, i) => (
-          <a key={l.href} href={l.href} onClick={onClose} style={{ transitionDelay: open ? `${0.08 + i * 0.06}s` : '0s' }}>
+          <a key={i} href={l.href} onClick={onClose} style={{ transitionDelay: open ? `${0.08 + i * 0.06}s` : '0s' }}>
             {l.label}
           </a>
         ))}
       </nav>
       <div className="mmenu__cta px">
-        <a className="btn btn-w" href={CV_URL} target="_blank" rel="noreferrer">
-          Descargar CV <span className="dot" />
+        <a className="btn btn-w" href={cv.url} target="_blank" rel="noreferrer">
+          {cv.buttonLabel} <span className="dot" />
         </a>
       </div>
     </div>
@@ -101,12 +95,12 @@ export default function Hero() {
       <nav className="nav wrap" aria-label="Principal">
         <a className="nav__brand ws" href="#inicio" style={{ animationDelay: '.1s' }}>
           <Logo />
-          Alejandra Hoces
+          {site.name}
         </a>
 
         <div className="nav__links">
           {navLinks.map((l, i) => (
-            <a key={l.href} className="ws" href={l.href} style={{ animationDelay: `${0.2 + i * 0.1}s` }}>
+            <a key={i} className="ws" href={l.href} style={{ animationDelay: `${0.2 + i * 0.1}s` }}>
               {l.label}
             </a>
           ))}
@@ -127,12 +121,12 @@ export default function Hero() {
 
       <div className="hero__content wrap">
         <p className="hero__eyebrow ws" style={{ animationDelay: '.2s' }}>
-          UX Designer · Lima, Perú
+          {hero.eyebrow}
         </p>
         <h1 className="hero__title serif">
-          {headline.map((w) => (
-            <span key={w.text}>
-              <span className="w" style={{ animationDelay: `${w.delay}s` }}>
+          {hero.title.map((w, i) => (
+            <span key={i}>
+              <span className="w" style={{ animationDelay: `${wordDelay(i)}s` }}>
                 {w.text}
               </span>
               {w.breakAfter === 'always' && <br />}
@@ -143,11 +137,11 @@ export default function Hero() {
           ))}
         </h1>
         <div className="hero__actions">
-          <a className="btn btn-w ws" href="#proyectos" style={{ animationDelay: '1.1s' }}>
-            Ver proyectos <span className="dot" />
+          <a className="btn btn-w ws" href={hero.primaryButton.href} style={{ animationDelay: '1.1s' }}>
+            {hero.primaryButton.label} <span className="dot" />
           </a>
-          <a className="btn btn-g ws" href={CV_URL} target="_blank" rel="noreferrer" style={{ animationDelay: '1.25s' }}>
-            Descargar CV
+          <a className="btn btn-g ws" href={cv.url} target="_blank" rel="noreferrer" style={{ animationDelay: '1.25s' }}>
+            {cv.buttonLabel}
           </a>
         </div>
         <div className="sline" style={{ animationDelay: '1.4s' }} aria-hidden="true">

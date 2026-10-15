@@ -1,0 +1,58 @@
+{
+  "_ayuda": "Sección \"Proyectos\". \"image\" es la ruta dentro de src/assets/ (p. ej. projects/izipay.jpg) o un link https. Sin imagen, usa \"code\": true para el bloque verde </>. \"objectPosition\" (opcional) ajusta el encuadre de la foto.",
+
+  "eyebrow": "CASOS DE ESTUDIO",
+  "title": ["Proyectos", "seleccionados"],
+  "lead": "Productos digitales para banca, pagos, movilidad y redes sociales.",
+
+  "items": [
+    {
+      "name": "Izi Pay",
+      "client": "Wunderman Phantasia · Procesos MC Perú",
+      "desc": "Promoción de la plataforma digital de Izi Pay: rediseño de la experiencia para dar a conocer su POS y sus servicios.",
+      "tags": ["UI Design", "Redesign", "Figma", "Marvel App"],
+      "image": "projects/izipay.jpg",
+      "alt": "Pantallas del rediseño de Izi Pay en móvil",
+      "links": [
+        { "label": "Ver proyecto", "href": "https://alejandrahoces.github.io/Izipay/" },
+        { "label": "Ver demo", "href": "https://marvelapp.com/aa7b7jb" }
+      ]
+    },
+    {
+      "name": "AlDía",
+      "client": "Wunderman Phantasia · ACP Group",
+      "desc": "Plataforma de captación de clientes para asesoría financiera, con simulador para liquidar deudas en pocos pasos.",
+      "tags": ["UI Design", "Figma", "Prototype", "Benchmark"],
+      "image": "projects/aldia.jpg",
+      "alt": "Landing de AlDía en desktop y móvil",
+      "links": [
+        { "label": "Ver proyecto", "href": "https://alejandrahoces.github.io/AlDia/" },
+        { "label": "Ver demo", "href": "https://marvelapp.com/6764c20" }
+      ]
+    },
+    {
+      "name": "Metroapp Lima",
+      "client": "Proyecto personal UX",
+      "desc": "App móvil para el Metropolitano de Lima con foco en accesibilidad: recarga, saldo y alertas en un solo lugar.",
+      "tags": ["Benchmarking", "Research", "Prototype", "Testing"],
+      "image": "projects/metroapp.jpg",
+      "alt": "Pantallas de Metroapp Lima",
+      "objectPosition": "center 30%",
+      "links": [
+        { "label": "Ver proyecto", "href": "https://foggy-leopard-239.notion.site/MetroApp-Lima-1dae4c459058800d9a41d520451f54df?pvs=143" },
+        { "label": "Ver demo", "href": "https://www.figma.com/proto/UXJU2nwE5SinbYrNbaojr5/Metro-app-Lima?node-id=2-501&t=1pHmBu3AquWh1rSq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A737" }
+      ]
+    },
+    {
+      "name": "Réplica de Twitter",
+      "client": "Laboratoria",
+      "desc": "Maquetación de la red social en versión desktop, construida desde cero con HTML, CSS y JavaScript.",
+      "tags": ["HTML5", "CSS3", "JavaScript", "icomoon", "GitHub"],
+      "code": true,
+      "links": [
+        { "label": "Ver código", "href": "https://github.com/alejandraHoces/twitter" },
+        { "label": "Ver demo", "href": "https://alejandrahoces.github.io/twitter/" }
+      ]
+    }
+  ]
+}

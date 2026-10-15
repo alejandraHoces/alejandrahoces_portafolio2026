@@ -1,0 +1,14 @@
+{
+  "_ayuda": "Fila de marcas debajo de la portada. Íconos disponibles: movistar, izipay, aldia, wunderman, laboratoria, acp.",
+
+  "title": "Marcas y equipos con los que he trabajado",
+
+  "items": [
+    { "name": "Movistar", "icon": "movistar" },
+    { "name": "Izipay", "icon": "izipay" },
+    { "name": "AlDía", "icon": "aldia" },
+    { "name": "Wunderman", "icon": "wunderman" },
+    { "name": "Laboratoria", "icon": "laboratoria" },
+    { "name": "ACP Group", "icon": "acp" }
+  ]
+}

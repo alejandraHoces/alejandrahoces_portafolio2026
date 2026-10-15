@@ -1,13 +1,14 @@
 import { projects } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
 import Eyebrow from './Eyebrow'
+import Lines from './Lines'
 
 function ProjectLinks({ project }) {
   return (
     <div className="media__actions">
       {project.links.map((l, i) => (
         <a
-          key={l.href}
+          key={i}
           className={cx('media__pill', i === 0 ? 'media__pill--primary' : 'media__pill--secondary')}
           href={l.href}
           target="_blank"
@@ -33,25 +34,25 @@ function ArrowIcon() {
 export default function Projects() {
   return (
     <section id="proyectos" className="projects wrap">
-      <Eyebrow>CASOS DE ESTUDIO</Eyebrow>
+      <Eyebrow>{projects.eyebrow}</Eyebrow>
       <div className="section-head">
         <h2 className="section-title serif rv">
-          Proyectos<br className="br-desktop" /> seleccionados
+          <Lines lines={projects.title} />
         </h2>
-        <p className="section-lead fu">Productos digitales para banca, pagos, movilidad y redes sociales.</p>
+        <p className="section-lead fu">{projects.lead}</p>
       </div>
 
       <div className="projects__grid">
-        {projects.map((p, i) => {
+        {projects.items.map((p, i) => {
           const st = stagger(1, i % 2 ? 2 : 1)
           return (
-            <article key={p.name} className="proj">
+            <article key={i} className="proj">
               <div className={cx('media clip', p.code && 'media--code', st)}>
                 <div className="media__zoom">
                   {p.code ? (
                     <span className="media__code serif" aria-hidden="true">&lt;/&gt;</span>
                   ) : (
-                    <img src={p.image} alt={p.alt} style={p.objectPosition ? { objectPosition: p.objectPosition } : undefined} />
+                    p.image && <img src={p.image} alt={p.alt} style={p.objectPosition ? { objectPosition: p.objectPosition } : undefined} />
                   )}
                 </div>
                 <ProjectLinks project={p} />
@@ -61,8 +62,8 @@ export default function Projects() {
                 <h3 className="proj__name serif">{p.name}</h3>
                 <p className="proj__desc">{p.desc}</p>
                 <div className="chips">
-                  {p.tags.map((t) => (
-                    <span key={t} className="chip">{t}</span>
+                  {p.tags.map((t, j) => (
+                    <span key={j} className="chip">{t}</span>
                   ))}
                 </div>
               </div>

@@ -1,0 +1,17 @@
+{
+  "_ayuda": "Sección \"Contacto\" y footer. El link para llamar se arma solo a partir de \"phone\". El CV se agrega solo al final de las redes (texto en 02-menu-logo-y-cv.json → cv.footerLabel). En \"copyright\", {year} se reemplaza solo por el año actual.",
+
+  "eyebrow": "Disponible para nuevos proyectos",
+  "title": "¿Creamos algo juntos?",
+
+  "email": "hocesalejandra@hotmail.com",
+  "phone": "+51 920 150 204",
+
+  "copyright": "© {year} Alejandra Hoces · Lima, Perú",
+
+  "socials": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/alejandrahoces/" },
+    { "label": "GitHub", "href": "https://github.com/alejandraHoces" },
+    { "label": "Twitter", "href": "https://twitter.com/alejandrahoces" }
+  ]
+}

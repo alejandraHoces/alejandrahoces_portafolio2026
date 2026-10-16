@@ -1,7 +1,7 @@
 {
-  "_ayuda": "Sección \"Sobre mí\". Los textos en [\"línea 1\", \"línea 2\"] se muestran en dos renglones. En las cifras, \"value\" es el número que se anima y \"prefix\" lo que va delante (opcional).",
+  "_ayuda": "Sección \"Sobre mí\". Los textos en [\"línea 1\", \"línea 2\"] se muestran en dos renglones. En las cifras, \"value\" es el número que se anima y \"prefix\" lo que va delante (opcional). Para un salto de línea dentro de un texto escribe <br> (dos seguidos <br><br> dejan un renglón en blanco).",
 
-  "title": ["Diseño con propósito.", "Enfocada en las personas."],
+  "title": ["Apasionada por crear experiencias digitales intuitivas", "que le aporten valor real a los usuarios"],
 
   "stats": [
     { "prefix": "+", "value": 8, "label": ["Años en tecnología", "y diseño digital"] },
@@ -9,5 +9,5 @@
     { "value": 4, "label": ["Casos de estudio", "publicados"] }
   ],
 
-  "text": "Hola, soy Alejandra Hoces. Tengo formación técnica en Computación e Informática y soy egresada de Laboratoria en UX Design y desarrollo web. Durante un año en Wunderman Thompson diseñé experiencias digitales para marcas como Movistar, Izi Pay y AlDía. Me encanta viajar, aprender constantemente y participar en voluntariados deportivos y ambientales."
+  "text": "Hola, soy Alejandra me encanta viajar y aprender constantemente. Soy técnica en Computación Informática y cuento con una especialización como UX Designer en Laboratoria. Tengo experiencia en los sectores de publicidad y salud. He trabajado en proyectos de diseño desde la conceptualización hasta el lanzamiento, utilizando mi conocimiento en investigación y herramientas de diseño para crear experiencias de usuario atractivas y efectivas.<br> Me apasiona trabajar en equipo para crear productos que marquen una diferencia real en la vida de las personas. Actualmente me estoy profesionalizando en la carrera de diseño y medios interactivos (UX/UI) y busco nuevas experiencias para aportar mi conocimiento. Me interesa trabajar en proyectos con inteligencia artificial (IA).<br><br> Gracias por visitar mi trabajo. Si deseas saber más sobre mí, ¡no dudes en contactarme!"
 }

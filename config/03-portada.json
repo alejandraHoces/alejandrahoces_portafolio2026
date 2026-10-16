@@ -5,11 +5,11 @@
 
   "title": [
     { "text": "Diseño" },
-    { "text": "experiencias", "breakAfter": "always" },
-    { "text": "centradas" },
-    { "text": "en", "breakAfter": "mobile" },
-    { "text": "las" },
-    { "text": "personas" }
+    { "text": "productos digitales", "breakAfter": "always" },
+    { "text": "claros que generan" },
+    { "text": "resultados medibles", "breakAfter": "mobile" },
+    { "text": "para el" },
+    { "text": "negocio" }
   ],
 
   "primaryButton": { "label": "Ver proyectos", "href": "#proyectos" }

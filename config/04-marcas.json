@@ -4,11 +4,10 @@
   "title": "Marcas y equipos con los que he trabajado",
 
   "items": [
+    { "name": "Detecta Clinica", "icon": "detecta clinica" },
+    { "name": "Wunderman", "icon": "wunderman" },
     { "name": "Movistar", "icon": "movistar" },
     { "name": "Izipay", "icon": "izipay" },
-    { "name": "AlDía", "icon": "aldia" },
-    { "name": "Wunderman", "icon": "wunderman" },
-    { "name": "Laboratoria", "icon": "laboratoria" },
-    { "name": "ACP Group", "icon": "acp" }
+    { "name": "Laboratoria", "icon": "laboratoria" }
   ]
 }

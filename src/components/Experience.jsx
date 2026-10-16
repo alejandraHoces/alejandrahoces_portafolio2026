@@ -1,12 +1,13 @@
 import { experience } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
+import Text from './Text'
 
 export default function Experience() {
   return (
     <section className="experience wrap" aria-labelledby="exp-title">
       <div className="experience__intro">
         <h2 id="exp-title" className="section-title serif rv">{experience.title}</h2>
-        <p className="experience__lead fu">{experience.lead}</p>
+        <p className="experience__lead fu"><Text>{experience.lead}</Text></p>
       </div>
 
       <div className="experience__list">

@@ -1,6 +1,7 @@
 import { about } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
 import Lines from './Lines'
+import Text from './Text'
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
         ))}
       </div>
 
-      <p className="about__text fu">{about.text}</p>
+      <p className="about__text fu"><Text>{about.text}</Text></p>
     </section>
   )
 }

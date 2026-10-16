@@ -4,6 +4,7 @@ import { stagger, cx } from '../utils/stagger'
 import Eyebrow from './Eyebrow'
 import { ArrowUpRight, ServiceIcon } from './Icons'
 import Lines from './Lines'
+import Text from './Text'
 
 /**
  * En pantallas táctiles no hay hover: el diseño mobile muestra una card "encendida".
@@ -51,7 +52,7 @@ export default function Services() {
         <h2 className="section-title serif rv">
           <Lines lines={services.title} />
         </h2>
-        <p className="section-lead fu">{services.lead}</p>
+        <p className="section-lead fu"><Text>{services.lead}</Text></p>
       </div>
 
       <div className="cards">
@@ -72,7 +73,7 @@ export default function Services() {
                 <Lines lines={s.title} />
               </h3>
             </div>
-            <p className="card__desc card__ct">{s.desc}</p>
+            <p className="card__desc card__ct"><Text>{s.desc}</Text></p>
             <ArrowUpRight className="card__arrow" />
           </a>
         ))}

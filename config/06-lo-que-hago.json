@@ -9,22 +9,22 @@
     {
       "icon": "research",
       "title": ["Research &", "Síntesis"],
-      "desc": "Benchmarking, entrevistas y testing para entender a las personas antes de diseñar."
+      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
     },
     {
       "icon": "architecture",
       "title": ["Arquitectura de", "Información"],
-      "desc": "Organizo contenidos y flujos para que cada pantalla tenga sentido y sea fácil de recorrer."
+      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
     },
     {
       "icon": "prototype",
       "title": ["Prototipado", "& UI Design"],
-      "desc": "De wireframes a prototipos navegables en Figma y Marvel App, listos para testear."
+      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
     },
     {
       "icon": "content",
       "title": ["Contenido", "& Desarrollo Web"],
-      "desc": "Estrategia de contenido y diseño pensado para construirse en HTML, CSS y JavaScript."
+      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
     }
   ]
 }

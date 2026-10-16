@@ -1,4 +1,5 @@
 import { contact } from '../data/content'
+import Text from './Text'
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
         <div className="dots" aria-hidden="true" />
         <div className="contact__inner">
           <p className="contact__eyebrow">{contact.eyebrow}</p>
-          <h2 className="contact__title serif rv">{contact.title}</h2>
+          <h2 className="contact__title serif rv"><Text>{contact.title}</Text></h2>
           <div className="contact__actions">
             <a className="btn btn-w" href={`mailto:${contact.email}`}>
               {contact.email} <span className="dot" />

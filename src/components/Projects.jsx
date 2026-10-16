@@ -2,6 +2,7 @@ import { projects } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
 import Eyebrow from './Eyebrow'
 import Lines from './Lines'
+import Text from './Text'
 
 function ProjectLinks({ project }) {
   return (
@@ -39,7 +40,7 @@ export default function Projects() {
         <h2 className="section-title serif rv">
           <Lines lines={projects.title} />
         </h2>
-        <p className="section-lead fu">{projects.lead}</p>
+        <p className="section-lead fu"><Text>{projects.lead}</Text></p>
       </div>
 
       <div className="projects__grid">
@@ -60,7 +61,7 @@ export default function Projects() {
               <div className={cx('proj__body fu', st)}>
                 <p className="proj__client">{p.client}</p>
                 <h3 className="proj__name serif">{p.name}</h3>
-                <p className="proj__desc">{p.desc}</p>
+                <p className="proj__desc"><Text>{p.desc}</Text></p>
                 <div className="chips">
                   {p.tags.map((t, j) => (
                     <span key={j} className="chip">{t}</span>

@@ -31,9 +31,15 @@
 }
 
 .brands__grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  --cols: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
+}
+
+.brands__grid > li {
+  flex: 0 0 calc((100% - (var(--cols) - 1) * 10px) / var(--cols));
 }
 
 .tile {
@@ -466,7 +472,7 @@
     font-size: 26px;
   }
   .brands__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    --cols: 3;
   }
   .tile {
     height: 92px;
@@ -673,7 +679,7 @@
     font-size: 28px;
   }
   .brands__grid {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    --cols: 6;
   }
   .tile {
     height: 104px;

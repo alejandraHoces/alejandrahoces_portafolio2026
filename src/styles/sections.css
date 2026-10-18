@@ -686,6 +686,9 @@
     font-size: 19px;
     letter-spacing: -0.01em;
   }
+  .tile__icon {
+    display: none;
+  }
 
   /* sobre mí */
   .about {

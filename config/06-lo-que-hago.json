@@ -9,22 +9,22 @@
     {
       "icon": "research",
       "title": ["UX", "Research"],
-      "desc": "Entiendo a los usuarios para diseñar en base a sus necesidades reales."
+      "desc": "Investigo y recopilo informacion de los usarios con entrevistas para diseñar segun sus necesidades reales."
     },
     {
       "icon": "architecture",
       "title": ["Arquitectura de", "Información"],
-      "desc": "Organizo el contenido para que todo sea fácil de encontrar."
+      "desc": "Organizo el contenido, los flujos y la navegación para que los usuarios encuentren todo de forma intuitiva."
     },
     {
       "icon": "prototype",
       "title": ["Wireframing", "y Prototipado"],
-      "desc": "Convierto ideas en prototipos para validarlos antes de construir."
+      "desc": "Convierto ideas en wireframes y prototipos interactivos para validarlas antes de construir y evitar fallos."
     },
     {
       "icon": "content",
       "title": ["Diseño", "de Interfaces (UI)"],
-      "desc": "Creo interfaces claras, consistentes y atractivas en Figma."
+      "desc": "Diseño en Figma interfaces claras, consistentes y modernas, cuidando cada detalle visual de la experiencia."
     }
   ]
 }

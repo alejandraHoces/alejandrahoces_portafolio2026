@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { services } from '../data/content'
 import { stagger, cx } from '../utils/stagger'
 import Eyebrow from './Eyebrow'
-import { ArrowUpRight, ServiceIcon } from './Icons'
+import { ServiceIcon } from './Icons'
 import Lines from './Lines'
 import Text from './Text'
 
@@ -57,12 +57,11 @@ export default function Services() {
 
       <div className="cards">
         {services.items.map((s, i) => (
-          <a
+          <div
             key={i}
             ref={(el) => (refs.current[i] = el)}
             data-index={i}
             className={cx('card fu', stagger(1, i + 1), active === i && 'is-on')}
-            href="#proyectos"
           >
             <span className="card__glow" />
             <span className="card__orb card__orb--1" />
@@ -74,8 +73,7 @@ export default function Services() {
               </h3>
             </div>
             <p className="card__desc card__ct"><Text>{s.desc}</Text></p>
-            <ArrowUpRight className="card__arrow" />
-          </a>
+          </div>
         ))}
       </div>
     </section>

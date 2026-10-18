@@ -219,16 +219,6 @@
   transition: color 0.5s;
 }
 
-.card__arrow {
-  position: absolute;
-  right: 20px;
-  top: 24px;
-  width: 20px;
-  height: 20px;
-  opacity: 0;
-  transition: opacity 0.5s, transform 0.5s var(--ease);
-}
-
 /* estado encendido: hover / foco / card activa en táctil */
 .card:focus-visible,
 .card.is-on {
@@ -246,11 +236,6 @@
 .card.is-on .card__desc {
   color: rgba(255, 255, 255, 0.88);
 }
-.card:focus-visible .card__arrow,
-.card.is-on .card__arrow {
-  opacity: 1;
-  transform: none;
-}
 
 @media (hover: hover) {
   .card:hover {
@@ -264,10 +249,6 @@
   }
   .card:hover .card__desc {
     color: rgba(255, 255, 255, 0.88);
-  }
-  .card:hover .card__arrow {
-    opacity: 1;
-    transform: none;
   }
 }
 
@@ -568,14 +549,6 @@
   .card__desc {
     font-size: 15px;
     line-height: 1.4;
-  }
-  .card__arrow {
-    top: auto;
-    right: 24px;
-    bottom: 24px;
-    width: 22px;
-    height: 22px;
-    transform: translate(-8px, 8px);
   }
 
   /* proyectos */

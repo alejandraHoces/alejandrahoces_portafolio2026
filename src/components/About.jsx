@@ -10,7 +10,7 @@ export default function About() {
         <Lines lines={about.title} />
       </h2>
 
-      <div className="stats">
+      {/*<div className="stats">
         {about.stats.map((s, i) => (
           <div key={i} className="stat">
             <div className={cx('stat__line ln', stagger(i + 1))} aria-hidden="true" />
@@ -23,7 +23,7 @@ export default function About() {
             </p>
           </div>
         ))}
-      </div>
+      </div>*/}
 
       <p className="about__text fu"><Text>{about.text}</Text></p>
     </section>

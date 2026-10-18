@@ -8,23 +8,23 @@
   "items": [
     {
       "icon": "research",
-      "title": ["Research &", "Síntesis"],
-      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
+      "title": ["UX", "Research"],
+      "desc": "Entiendo a los usuarios para diseñar en base a sus necesidades reales."
     },
     {
       "icon": "architecture",
       "title": ["Arquitectura de", "Información"],
-      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
+      "desc": "Organizo el contenido para que todo sea fácil de encontrar."
     },
     {
       "icon": "prototype",
-      "title": ["Prototipado", "& UI Design"],
-      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
+      "title": ["Wireframing", "y Prototipado"],
+      "desc": "Convierto ideas en prototipos para validarlos antes de construir."
     },
     {
       "icon": "content",
-      "title": ["Contenido", "& Desarrollo Web"],
-      "desc": "UX Research <br> User Testing <br> Arquitectura de Información <br> Customer Journey Mapping"
+      "title": ["Diseño", "de Interfaces (UI)"],
+      "desc": "Creo interfaces claras, consistentes y atractivas en Figma."
     }
   ]
 }
